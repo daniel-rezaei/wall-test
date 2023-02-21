@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "strict": true,
+    "lib": ["ES5", "DOM"],
+    "target": "es5"
+  },
+  "include": [
+    "./src/"
+  ]
+}
