@@ -15,6 +15,7 @@ export class VendingService {
   private TIMEOUT = process.env.NODE_ENV === 'test' ? 1 : 15*60*1000;
   constructor(initialState: Machine[]){
     this.state = initialState;
+    //it would be much better to inject ProductRepository, both for testing purposes and maintenance in future
     this.productRepository = new ProductRepository();
     this.dispenseRequests = [];
   }
